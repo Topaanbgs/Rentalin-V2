@@ -1,0 +1,14 @@
+# Ignore env files
+.env
+.env.local
+.env.production
+
+# Ignore dependencies
+node_modules/
+vendor/
+
+# Ignore IDE files
+.vscode/
+
+# Ignore SQL dump
+rentalin.sql
