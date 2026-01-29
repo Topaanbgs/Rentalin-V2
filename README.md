@@ -46,12 +46,14 @@ cp .env.example .env
 php artisan key:generate
 php artisan migrate --seed
 php artisan serve
-2. Frontend (Next.js)
+
+### 2. Frontend (Next.js)
 Bash
 cd rentalin-frontend
 npm install
 cp .env.example .env
 npm run dev
+
 🎓 Academic Achievement
 Proyek ini dikembangkan sebagai proyek akhir Mata Kuliah Teknologi Web dan berhasil meraih nilai "A". Fokus utama proyek adalah implementasi sistem terdistribusi dan otomasi layanan web.
 
