@@ -38,50 +38,48 @@ Ikuti langkah-langkah di bawah ini untuk menjalankan project di lingkungan lokal
 
 ### 1. Persiapan Backend (Laravel)
 
-# Masuk ke folder backend
+**Masuk ke folder backend**
 cd rentalin-backend
 
-# Install dependencies
+**Install dependencies**
 composer install
 
-# Konfigurasi environment
+**Konfigurasi environment**
 cp .env.example .env
 php artisan key:generate
 
-# Jalankan database migration & seeder
+**Jalankan database migration & seeder**
 php artisan migrate --seed
 
-# Jalankan server backend
+**Jalankan server backend**
 php artisan serve 
 
 ### 2. Persiapan Frontend (Next.js)
 
-# Masuk ke folder frontend
+**Masuk ke folder frontend**
 cd rentalin-frontend
 
-# Install dependencies
+**Install dependencies**
 npm install
 
-# Konfigurasi environment
+**Konfigurasi environment**
 cp .env.example .env
 
-# Jalankan server frontend (development)
+**Jalankan server frontend (development)**
 npm run dev
 
 ---
 
-🔄 System Workflow (Cronjob & Notification)
+## 🔄 System Workflow (Cronjob & Notification)
 Sistem ini menggunakan Laravel Task Scheduler yang berjalan setiap menit untuk melakukan audit otomatis terhadap transaksi:
 
 Audit: Mengecek transaksi yang melewati batas waktu pembayaran.
-
 Action: Mengubah status unit secara otomatis.
-
 Notify: Mengirimkan notifikasi email otomatis kepada user terkait status akun atau tagihan mereka.
 
 ---
 
-🎓 Academic Achievement
+## 🎓 Academic Achievement
 Proyek ini dikembangkan sebagai proyek akhir Mata Kuliah Teknologi Web dan berhasil meraih nilai "A". Fokus utama proyek ini adalah demonstrasi implementasi dynamic SEO, sistem terdistribusi, arsitektur API, dan otomasi layanan web.
 
-Developed by Topan Bagus Prasetyo
+**Developed by Topan Bagus Prasetyo**
